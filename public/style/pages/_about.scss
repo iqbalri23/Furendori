@@ -1,0 +1,64 @@
+.page-about {
+    h2 {
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        color: #0c0d36;
+        margin-top: 20px;
+    }
+    .card-about {
+        background: #fefefe;
+        -webkit-box-shadow: 0px 4px 15px #f1f1f8;
+        box-shadow: 0px 4px 15px #f1f1f8;
+        border-radius: 8px;
+        border: none;
+        text-decoration: none !important;
+    }
+}
+
+.jumbotron-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial:before {
+    background: rgba(2, 2, 2, 0.4);
+}
+
+.testimonials-slider {
+    position: relative;
+}
+
+.testimonial-text {
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.testimonial-caption {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.testimonial-title {
+    font-size: 14px;
+}
+
+.testimonial-descr {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+}
+
+.parallax-image {
+    background-color: #0c0d36;
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
