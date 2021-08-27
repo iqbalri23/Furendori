@@ -89,7 +89,7 @@
               <h2 class="mb-4">Detail Alamat Pengiriman</h2>
             </div>
           </div>
-          <form action="{{ route('checkout') }}" id="locations" enctype="multipart/form-data" methode="POST">
+          <form action="{{ route('checkout') }}" id="locations" enctype="multipart/form-data" method="POST">
           @csrf
           <input type="hidden" name="total_price" value="{{ $totalPrice }}">
             <div class="row mb-2" data-aos="fade-up" data-aos-delay="200">

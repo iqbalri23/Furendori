@@ -6,7 +6,7 @@
 
 @section('content')
 <!-- Section Content -->
-<div
+<!--<div
 class="section-content section-dashboard-home"
 data-aos="fade-up"
 >
@@ -95,5 +95,5 @@ data-aos="fade-up"
         </div>
     </div>
 </div>
-</div>
+</div>-->
 @endsection

@@ -12,7 +12,7 @@
             <div class="col-12">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="/index.html" class="">Beranda</a>
+                  <a href="{{ route('home')}}" class="">Beranda</a>
                 </li>
                 <li class="breadcrumb-item active">
                   Detail Produk

@@ -20,11 +20,13 @@ Route::get('/categories/{id}', 'CategoryController@detail')->name('categories-de
 Route::get('/details/{id}', 'DetailController@index')->name('detail');
 Route::post('/details/{id}', 'DetailController@add')->name('detail-add');
 
+
 Route::group(['middleware'=> ['auth']], function(){
     Route::get('/cart', 'CartController@index')->name('cart');
     Route::delete('/cart/{id}', 'CartController@delete')->name('cart-delete');
 
-    Route::get('/checkout', 'CheckOutController@process')->name('checkout');
+    Route::post('/checkout', 'CheckoutController@process')->name('checkout');
+    Route::post('/checkout/callback', 'CheckoutController@callback')->name('midtrans-callback');
 
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
     Route::get('/dashboard/products', 'DashboardProductController@index')->name('dashboard-product');
@@ -35,9 +37,7 @@ Route::group(['middleware'=> ['auth']], function(){
     Route::post('/dashboard/products/gallery/upload', 'DashboardProductController@uploadGallery')->name('dashboard-product-gallery-upload');
     Route::get('/dashboard/products/delete/{id}', 'DashboardProductController@deleteGallery')->name('dashboard-product-gallery-delete');
 
-    Route::get('/checkout/callback', 'CheckoutController@callback')->name('midtrans-callback');
     Route::get('/success', 'CartController@success')->name('success');
-
 
     Route::get('/dashboard/transactions', 'DashboardTransactionController@index')->name('dashboard-transaction');
     Route::get('/dashboard/transactions/{id}', 'DashboardTransactionController@details')->name('dashboard-transaction-details');

@@ -44,7 +44,7 @@
                                     Transaksi
                                 </div>
                                 <div class="dashboard-card-subtitle">
-                                    Rp.{{ $transaction }}
+                                    {{ $transaction }}
                                 </div>
                             </div>
                         </div>

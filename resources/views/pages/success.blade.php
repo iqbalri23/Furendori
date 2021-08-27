@@ -18,16 +18,16 @@
               />
               <h2>Transaksi Berhasil</h2>
               <p>
-                Silahkan tunggu konfirmasi eEmail dari kami dan kami akan
+                Silahkan tunggu konfirmasi Email dari kami dan kami akan
                 menginformasikan resi secepat mungkin!
               </p>
               <div>
-                <a href="/dashboard.html" class="btn btn-success w-50 mt-4">
-                  My Dashboard
+                <a href="{{route ('dashboard-transactions')}}" class="btn btn-success w-50 mt-4">
+                  Lihat transaksi
                 </a>
               </div>
               <div>
-                <a href="/index.html" class="btn btn-signup w-50 mt-2">
+                <a href="{{ route ('home') }}" class="btn btn-signup w-50 mt-2">
                   Lanjutkan Belanja
                 </a>
               </div>

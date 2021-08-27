@@ -22,7 +22,7 @@
   <body>
     {{--Page Content--}}
         @yield('content')
-    {{--Footer--}}}
+    {{--Footer--}}
         @include('includes.footer')
     {{--script--}}
         @stack('prepend-script')
