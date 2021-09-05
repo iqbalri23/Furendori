@@ -166,7 +166,7 @@
                             </div>
                         </div>
                         <div class="products-text">{{ $product->name }}</div>
-                        <div class="products-price">Rp.<del>{{ number_format($product->price) }}</del></div>
+                        <div class="products-price"><del>Rp.{{ number_format($product->price) }}</del></div>
                          <div class="products-price">Rp.{{ number_format($product->price_discount) }}</></div>
                     </a>
                 </div>
